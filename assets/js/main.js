@@ -52,7 +52,7 @@ const app = {
           name: "Điền vào ô trống (250)",
           singer: "Cahoihoang",
           path: '../assets/music/DienVaoOTrong250-CaHoiHoang.mp3',
-          image: '../assets/img/Dienvaootrong250.jpeg' 
+          image: '../img/Dienvaootrong250.jpeg' 
         },
         {
           name: "Đông kiếm em",
