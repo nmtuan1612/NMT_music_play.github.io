@@ -51,14 +51,14 @@ const app = {
         {
           name: "Điền vào ô trống (250)",
           singer: "Cahoihoang",
-          path: "../assets/music/DienVaoOTrong250-CaHoiHoang.mp3",
-          image: "../assets/img/Dienvaootrong250.jpeg" 
+          path: '../assets/music/DienVaoOTrong250-CaHoiHoang.mp3',
+          image: '../assets/img/Dienvaootrong250.jpeg' 
         },
         {
           name: "Đông kiếm em",
           singer: "Vu.",
-          path: "../assets/music/DongKiemEm-ThaiVu.mp3",
-          image: "../assets/img/Dongkiemem.jpeg"
+          path: '../assets/music/DongKiemEm-ThaiVu.mp3',
+          image: '../assets/img/Dongkiemem.jpeg'
         },
         {
           name: "Nevada",
