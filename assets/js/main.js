@@ -51,62 +51,62 @@ const app = {
         {
           name: "Điền vào ô trống (250)",
           singer: "Cahoihoang",
-          path: '../assets/music/DienVaoOTrong250-CaHoiHoang.mp3',
+          path: 'assets/music/DienVaoOTrong250-CaHoiHoang.mp3',
           image: 'assets/img/Dienvaootrong250.jpeg'
         },
         {
           name: "Đông kiếm em",
           singer: "Vu.",
-          path: '../assets/music/DongKiemEm-ThaiVu.mp3',
-          image: '../assets/img/Dongkiemem.jpeg'
+          path: 'assets/music/DongKiemEm-ThaiVu.mp3',
+          image: 'assets/img/Dongkiemem.jpeg'
         },
         {
           name: "Nevada",
           singer: "Vicetone​ feat. Cozi Zuehlsdorff​",
-          path: "../assets/music/Nevada.mp3",
-          image: "../assets/img/Nevada.jpeg"
+          path: "assets/music/Nevada.mp3",
+          image: "assets/img/Nevada.jpeg"
         },
         {
           name: "Ngày khác lạ",
           singer: "Den x DJ GiangPham x TripleD",
-          path: "../assets/music/NgayKhacLa-DenDJGiangPhamTripleD.mp3",
-          image: "../assets/img/Ngaykhacla.jpeg"
+          path: "assets/music/NgayKhacLa-DenDJGiangPhamTripleD.mp3",
+          image: "assets/img/Ngaykhacla.jpeg"
         },
         {
           name: "Ngày nào",
           singer: "CaHoiHoang x Datmaniac",
-          path: "../assets/music/NgayNao-CaHoiHoangDatmaniac.mp3",
-          image: "../assets/img/maxresdefault.jpeg"
+          path: "assets/music/NgayNao-CaHoiHoangDatmaniac.mp3",
+          image: "assets/img/maxresdefault.jpeg"
         },
         {
           name: "Older",
           singer: "Sasha Sloan",
-          path: "../assets/music/Older-SashaSloan.mp3",
-          image: "../assets/img/Older.jpeg"
+          path: "assets/music/Older-SashaSloan.mp3",
+          image: "assets/img/Older.jpeg"
         },
         {
           name: "Sugar",
           singer: "Maroon5",
-          path: "../assets/music/Sugar-Maroon5.mp3",
-          image: "../assets/img/Sugar.jpeg"
+          path: "assets/music/Sugar-Maroon5.mp3",
+          image: "assets/img/Sugar.jpeg"
         },
         {
           name: "Why not me",
           singer: "Enrique Iglesias",
-          path: "../assets/music/WhyNotMe-EnriqueIglesias.mp3",
-          image: "../assets/img/whynotme.jpeg"
+          path: "assets/music/WhyNotMe-EnriqueIglesias.mp3",
+          image: "assets/img/whynotme.jpeg"
         },
         {
           name: "Summer time",
           singer: "K391",
-          path: "../assets/music/Summertime.mp3",
-          image: "../assets/img/summertime.jpeg"
+          path: "assets/music/Summertime.mp3",
+          image: "assets/img/summertime.jpeg"
         },
         {
           name: "Never be alone",
           singer: "Nightcore ",
-          path: "../assets/music/NeverBeAlone-Nightcore.mp3",
-          image: "../assets/img/neverbealone.jpeg"
+          path: "assets/music/NeverBeAlone-Nightcore.mp3",
+          image: "assets/img/neverbealone.jpeg"
         }
     ],
 
@@ -257,13 +257,15 @@ const app = {
         // Xu ly khi click vao bai hat
         playList.onclick = function(e) {
           songClicked = e.target.closest('.song:not(.active)')
-          if (songClicked) {
-            _this.currentIndex = Number(songClicked.dataset.index)  // str to Number
-            _this.loadCurrentSong()
-            _this.render()
-            console.log(songClicked)
-            audio.play()
-          }
+          setTimeout(function () {
+              if (songClicked) {
+                _this.currentIndex = Number(songClicked.dataset.index)  // str to Number
+                _this.loadCurrentSong()
+                _this.render()
+                console.log(songClicked)
+                audio.play()
+              }
+          }, 200)
         },
 
         //  Xu ly dieu chinh volume
